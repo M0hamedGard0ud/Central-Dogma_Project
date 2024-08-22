@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DNA to RNA to Protein</title>
+  <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>CENTRAL DOGMA OF MOLECULAR BIOLOGY</h1>
+    <div class="video-container">
+      <video controls autoplay loop muted>
+        <source src="./DNA_Protein.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div>
+      <h3>DNA Sequence:</h3>
+      <input type="text" id="dnaInput" placeholder="Enter DNA sequence" />
+    </div>
+    <div>
+      <button onclick="transcribeAndTranslate()">CONVERT</button>
+      <button onclick="clearFields()">CLEAR</button>
+    </div>
+    <div>
+      <h3>RNA Sequence:</h3>
+      <textarea id="rnaOutput" rows="5"></textarea>
+    </div>
+    <div>
+      <h3>Protein Sequence:</h3>
+      <p id="proteinOutput"></p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
